@@ -1,7 +1,7 @@
 [
-  { "settings_name":"org_name", "settings_value":"Princeton UniversityX" },
+  { "settings_name":"org_name", "settings_value":"Princeton University" },
   { "settings_name":"logo_path", "settings_value":"images/logo.svg" },
-  { "settings_name":"url_example", "settings_value":"www.princeton.edu/news/2020/12/14/forecasting-next-covid-19X" },
+  { "settings_name":"url_example", "settings_value":"www.princeton.edu/news/2022/04/25/faculty-approve-academic-minors-princeton" },
   { "settings_name":"source_example", "settings_value":"facebook, princeton weekly bulletin, builds" },
   { "settings_name":"campaign_nickname_example", "settings_value":"diversity, Innovation January 2021, NZA" }
 ]
