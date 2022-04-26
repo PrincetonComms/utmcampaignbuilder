@@ -1,0 +1,130 @@
+<!doctype html>
+<!--
+  By Christian Knoebel, Princeton University Office of Communications
+  On this first day of our long pandemic winter, 21st December A.D. 2020, etc., etc.
+-->
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Other meta tags -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title>UTM Campaign Builder</title>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo-path">
+
+  </div>
+  <div class="title">
+    <h1>UTM Campaign Builder</h1>
+  </div>
+</div>
+
+<div class="instructions">
+  <b>Fill in the form, get a UTM-encoded URL for your Google Analytics campaign.</b> Campaign Builder creates a URL in the format used by the Office of Communications, including converting values to lowercase and replacing spaces with underscores.
+</div>
+
+<form id="campaign-builder-form">
+  <div class="card">
+    <div class="card-header">1. Where I am linking to</div>
+    <div class="card-body">
+      <div class="form-group">
+        Protocol
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="https" name="protocol" value="https" checked>
+          <label class="form-check-label" for="https">https</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" id="http" name="protocol" value="http">
+          <label class="form-check-label" for="http">http</label>
+        </div>
+        <small class="form-text text-muted">
+          Most Princeton sites will use "https" at the beginning of their URL.
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="site-path">URL <span class="required">*</span></label>
+        <input type="text" id="site-path" class="form-control" name="site-path" value="www.princeton.edu">
+        <small class="form-text text-muted">
+          The site and path you are linking to. Example: <span class="highlight url-example"></span>
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">2. Where I am linking from</div>
+    <div class="card-body">
+      <div class="form-group">
+        <!-- SOURCE: Where the traffic comes from -->
+        <label for="source">Source <span class="required">*</span></label>
+        <input type="text" id="source" class="form-control" name="source" value="">
+        <small class="form-text text-muted">
+          The human-readable name of the channel where this link will appear. Best practice: Whatever source name you use, <b>keep it consistent</b> across all campaigns, especially when it's known by nicknames or a subdomain. Examples: <span class="source-example"></span>
+        </small>
+      </div>
+      <div class="form-group">
+        <!-- MEDIUM: The type or mode of the traffic source -->
+        <label for="medium">Medium <span class="required">*</span></label>
+        <select id="medium" class="form-control" name="medium">
+        </select>
+        <small class="form-text text-muted">
+          What kind of thing is the source?
+        </small>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">3. My campaign's name (optional but very helpful)</div>
+    <div class="card-body">
+      <div class="form-group">
+        <!-- CAMPAIGN: A specific campaign -->
+        <label for="campaign-owner">Owner</label>
+        <select id="campaign-owner" class="form-control" name="campaign-owner">
+        </select>
+        <small class="form-text text-muted">
+          Who is the owner?
+          <ul>
+            <li>If you are using the generated campaign URL on channels you own or if you are sending the generated URL to units around campus because you want to know the click-thrus back to your channels, you're the owner.</li>
+            <li>If another unit is asking you to track clicks to your site for their own needs, they're the owner.</li>
+          </ul>
+        </small>
+      </div>
+      <div class="form-group">
+        <label for="campaign-nickname">Nickname</label>
+        <input type="text" id="campaign-nickname" class="form-control" name="campaign-nickname" value="">
+        <small class="form-text text-muted">
+          A name or title that sets this campaign apart from similar ones sent by the owner. Example: <span class="campaign-nickname-example"></span>
+        </small>
+      </div>
+    </div>
+  </div>
+  <button id="submit" type="button" class="btn btn-primary">Bake It</button>
+</form>
+
+<div class="card">
+  <div class="card-header">My campaign URL is ...</div>
+  <div class="card-body">
+    <textarea id="code" class="form-control" name="code" rows="3" cols="33" readonly></textarea>
+    <small class="form-text text-muted">
+      Paste this code into your message. This code is not saved for later.
+    </small>
+    <button id="copy-to-clipboard" type="button" class="btn btn-secondary">Copy to Clipboard</button>
+  </div>
+</div>
+<div class='footer'><span class="org-name"></span> UTM Campaign Builder by Christian Knoebel, Office of Communications. &copy;<span id="year"></span> The Trustees of Princeton University.</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

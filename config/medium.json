@@ -1,0 +1,9 @@
+[
+  { "medium_value":"website", "medium_label":"Website" },
+  { "medium_value":"social", "medium_label":"Social" },
+  { "medium_value":"email", "medium_label":"Email" },
+  { "medium_value":"ppc", "medium_label":"PPC" },
+  { "medium_value":"cpm", "medium_label":"CPM" },
+  { "medium_value":"paid_social", "medium_label":"Paid Social" },
+  { "medium_value":"other", "medium_label":"OtherX" }
+]

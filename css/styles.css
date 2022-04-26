@@ -1,0 +1,77 @@
+body
+  {
+    padding: 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .header
+  {
+    overflow: auto;
+  }
+
+  .logo
+  {
+    float: left;
+    width: 220px;
+    padding: 10px;
+    margin-right: 1rem;
+  }
+
+  .title
+  {
+    float: left;
+    padding: 10px;
+  }
+
+  .instructions
+  {
+    margin: 2rem 0;
+    font-size: 1.15rem;
+  }
+
+  form
+  {
+    margin: 2rem 0;
+  }
+
+  .card
+  {
+    margin: 2rem 0;
+  }
+
+  .card-header
+  {
+    font-weight: bold;
+  }
+
+  .highlight
+  {
+    background-color: #eee;
+    padding: 2px 6px;
+    color: #444;
+    display: inline-block;
+    margin: 0 2px;
+  }
+
+  .required
+  {
+    color: red;
+  }
+
+  #copy-to-clipboard
+  {
+    margin: 1rem 0;
+  }
+
+  .footer
+  {
+    background-color: #eee;
+    padding: 10px 20px;
+    color: #444;
+    margin: 2rem 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }

@@ -1,0 +1,7 @@
+[
+  { "campaign_owner_value":"communications", "campaign_owner_label":"Communications" },
+  { "campaign_owner_value":"advancement", "campaign_owner_label":"Advancement" },
+  { "campaign_owner_value":"engineering", "campaign_owner_label":"Engineering" },
+  { "campaign_owner_value":"andlinger", "campaign_owner_label":"Andlinger" },
+  { "campaign_owner_value":"high_meadows", "campaign_owner_label":"High Meadows" }
+]
