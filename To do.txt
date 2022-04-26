@@ -1,2 +1,0 @@
-To do:
-- move css and javascript to external files (half done)
